@@ -21,18 +21,137 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #222222;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-field-container {
+  display: flex;
+  align-items: center;
+  width: 40vw;
 }
+
+.input-field {
+  flex-grow: 1;
+}
+
+.text-field {
+  color: #76DEBC;
+}
+
+.sendButton {
+  color: #76DEBC;
+}
+
+.response-box{
+  height: 80vh;
+}
+
+.container{
+  display: grid;
+  grid-template-areas:
+    "main"
+    "sidebar";
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #222222;
+}
+
+.sidebarWrapper{
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #272727;
+  width: 100%;
+}
+
+.sidebarControls{
+  height: 4vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: #76DEBC;
+  margin-left: 0.5vw;
+  margin-top: 0.5vh;
+}
+
+.newChat{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #272727;
+  border-radius: 10%;
+  height: 4vh;
+  width: 60%;
+}
+
+.newChat:hover{
+  background-color:#444444;
+  cursor: pointer;
+}
+
+.newChatText{
+  color: #76DEBC;
+  margin-left: 0.5vw;
+}
+.addIcon{
+  display: flex;
+  margin-left: 0.5vw;
+}
+
+.sidebarIcon{
+  margin-right: 1vw;
+  margin-left: 1vw;
+  display: flex;
+  border: 1px solid #272727;
+  border-radius: 10%;
+  height: 4vh;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+
+.sidebarIcon:hover{
+  background-color: #444444;
+  cursor: pointer;
+}ß
+
+.chats{
+  margin-top: 30px;
+  align-items: space-between;
+  background-color: #272727;
+}
+
+.chat:hover{
+  background-color: #444444;
+  cursor: pointer;
+}
+
+.chat{
+  margin-top: 5px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  border-radius: 2%;
+  color: #76DEBC;
+  background-color: #272727;
+  height: 4vh;
+  width: 95%;
+  display: flex;
+justify-content: start;  
+align-items: center;
+}
+
+.chatIcon{
+  margin-right: 1vw;
+  margin-left: 1vw;
+  display: flex;
+}
+
+
